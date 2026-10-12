@@ -1,0 +1,10 @@
+{
+  "name": "GameVerse Oyun Portalı",
+  "short_name": "GameVerse",
+  "description": "Brauzer oyunlarını bir yerdə kəşf et.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090d1a",
+  "theme_color": "#090d1a",
+  "icons": []
+}
