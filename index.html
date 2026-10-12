@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090d1a">
+  <meta name="description" content="GameVerse — sevdiyin brauzer oyunlarını bir yerdə tap.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+  <title>GameVerse — Oyun portalı</title>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="logo">G</span> Game<span>Verse</span></a>
+    <div class="top-actions"><span class="pill">PC + Android</span><a class="outline" href="#sources">Oyun mənbələri</a></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SƏNİN OYUN MƏRKƏZİN</p>
+        <h1>Bir dünya.<br><span>Minlərlə oyun.</span></h1>
+        <p class="sub">Brauzer oyunlarını bir yerdə kəşf et. Quraşdırma tələb etməyən oyunları seç və oynamağa başla.</p>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Oyun və ya janr axtar..." aria-label="Oyun axtar"></label>
+        <div class="hero-buttons"><a class="primary" href="#games">Oyunları kəşf et <span>→</span></a><a class="secondary" href="#sources">Mənbələr</a></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb1"></div><div class="orb orb2"></div>
+        <div class="gamepad">✦</div><div class="floating f1">ARCADE</div><div class="floating f2">PLAY NOW</div>
+      </div>
+    </section>
+    <section class="section" id="games">
+      <div class="section-heading"><div><p class="eyebrow">KATALOQ</p><h2>Oyun seç</h2></div><span id="count" class="muted"></span></div>
+      <nav class="filters" aria-label="Janr filtri">
+        <button class="filter active" data-filter="all">Hamısı</button>
+        <button class="filter" data-filter="action">Aksiyon</button>
+        <button class="filter" data-filter="racing">Yarış</button>
+        <button class="filter" data-filter="puzzle">Puzzle</button>
+        <button class="filter" data-filter="arcade">Arcade</button>
+      </nav>
+      <div id="game-grid" class="game-grid"></div>
+      <p class="notice">Bu ilkin versiyadır: kartlar oyun kataloquna nümunədir. Yalnız rəsmi və icazəli oyun linklərini əlavə et. Bəzi oyunlar başqa saytda açılacaq.</p>
+    </section>
+    <section class="sources" id="sources">
+      <div><p class="eyebrow">OYUN MƏNBƏLƏRİ</p><h2>Sevdiyin platformaya keç</h2><p class="muted">GameVerse müstəqil kataloqdur; Yandex Games və Poki ilə rəsmi tərəfdaşlıq iddiası etmir.</p></div>
+      <a class="source-card" href="https://yandex.com/games/" target="_blank" rel="noopener noreferrer"><span class="source-icon">Y</span><span><strong>Yandex Games</strong><small>Oyun kataloquna bax</small></span><b>↗</b></a>
+      <a class="source-card" href="https://poki.com/" target="_blank" rel="noopener noreferrer"><span class="source-icon poki">P</span><span><strong>Poki</strong><small>Oyun kataloquna bax</small></span><b>↗</b></a>
+    </section>
+  </main>
+  <footer><a class="brand small" href="#"><span class="logo">G</span> Game<span>Verse</span></a><span>Fan-made oyun kataloqu • 2026</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
